@@ -1,0 +1,62 @@
+.container-hero{
+    background-color: white;
+    width: 900px;
+    padding: 50px;
+    position:relative;
+}
+
+ul, li {
+    list-style: none;
+}
+
+ul.slider{
+    position: relative;
+    width: 950px;
+    height: 400px;
+    color: rgb(97, 84, 69); /*color del texto 1*/
+    text-decoration: none;
+}
+
+ul.slider li {
+    position: absolute;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity 0.5s;
+    background:#ddd;
+}
+
+ul.slider li img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+ul.slider li:target {
+    opacity: 1;
+}
+
+.menu{
+    text-align:left;
+    margin-left: 30px;
+    margin-top: 70px;
+}
+
+.menu li{
+    /*posicion de los botones*/
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    /*aspecto de los botones*/
+    display: inline-block;
+    color:aliceblue;
+    text-decoration: none;
+    background-color: rgb(35, 48, 48);
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    font-size: 25px;
+    border-radius: 40%;
+}

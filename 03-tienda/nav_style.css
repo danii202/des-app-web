@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: aliceblue;
+}
+.topnav {
+    overflow: hidden;
+    background-color:rgb(35, 48, 48);
+}
+.topnav a {
+    float:left;
+    color: aliceblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.b1 {
+    background-color: cadetblue;
+    color:rgb(35, 48, 48);
+}

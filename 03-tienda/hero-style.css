@@ -1,0 +1,31 @@
+.container-hero {
+    background-image: linear-gradient(rgba(77, 85, 112, 0.5),
+    rgba(29, 33, 48, 0.5), url(img/banner.jpg));
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 50%;
+}
+
+.h-text {
+    text-align: center;
+    position:relative;
+    top: 50px;
+    left: 10%;
+    color:rgb(35, 48, 48);
+}
+
+.h-text button {
+    border: none;
+    padding: 10px 25px;
+    color: black;
+    background-color:bisque;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.h-text button:hover {
+    background-color:cadetblue;
+    color: white;
+}
