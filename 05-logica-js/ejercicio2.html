@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+	
+</head>	
+
+<body>
+	<!--Escribe una función que pregunte al usuario la 
+	temperatura en grados Fahrenheit.
+	Deberás entonces convertir ese valor a grados Celsius e imprimir 
+	en consola o en pantalla el resultado.-->
+	
+	<script>
+	
+	function temperatura (temp, limDecimal) {
+		var tempCent = (temp-32)*5/9;
+		var limDecimal =  tempCent.toFixed(4);
+		alert("La temperatura en Centígrados es: " + limDecimal);
+	}
+	
+	var temp= Number (prompt ("¿A qué temperatura estamos?\nEscríbelo en Farenheit."));
+	temperatura(temp);
+	</script>
+	
+</body>
+
+</head>
+</html>

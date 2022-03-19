@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+	
+</head>	
+
+<body>
+	<!--Escribe una función que reciba como parámetro 3 números.
+	Posteriormente deberá mostrar en consola o 
+	pantalla el número mayor de los 3.-->
+	
+	<script> 
+		function numeroMayor (n1, n2, n3) {
+			if (n1>n2 && n1>n3) {
+				alert ("El mayor es " + n1);
+			} else if (n2>n1 && n2>n3) {
+				alert ("El mayor es " + n2);
+			} else if (n3>n1 && n3>n2) {
+				alert ("El mayor es " + n3);
+			} 
+		}
+		
+		alert ("Escribe tres números diferentes y te diré cuál es el mayor");
+		var n1 = Number(prompt ("Número 1:"));
+		var n2 = Number(prompt ("Número 2:"));
+		var n3 = Number(prompt ("Número 3:"));
+		numeroMayor(n1,n2,n3);
+	</script>
+	
+</body>
+
+</head>
+</html>
