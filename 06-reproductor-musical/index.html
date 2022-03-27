@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!--<center><h1 style="color:#003566">Music Player</h1></center>
+    <script src="one.js"></script>-->
+    <div class="Player"> 
+        <div class="leftColumn">
+            <div class="listTitle"><center>Lista de Reproducción</center>
+            </div>
+            <div class="songList">
+                <li class="songItem">
+                    <span>01</span>
+                    <img src="track-art/teen-idle.jpg">
+                    <div class="itemData">
+                        <div class="itemSongName">Teen Idle</div>
+                        <div class="itemArtist">Marina and the Diamonds</div>
+                        <i class="pp" id="1"></i>
+                    </div>
+                </li>
+                <li class="songItem">
+                    <span>02</span>
+                    <img src="track-art/teen-idle.jpg">
+                    <div class="itemData">
+                        <div class="itemSongName">Teen Idle</div>
+                        <div class="itemArtist">Marina and the Diamonds</div>
+                        <i class="pp" id="02"></i>
+                    </div>
+                </li>
+                <li class="songItem">
+                    <span>03</span>
+                    <img src="track-art/teen-idle.jpg">
+                    <div class="itemData">
+                        <div class="itemSongName">Teen Idle</div>
+                        <div class="itemArtist">Marina and the Diamonds</div>
+                        <i class="pp" id="3"></i>
+                    </div>
+                </li>
+                <li class="songItem">
+                    <span>04</span>
+                    <img src="track-art/teen-idle.jpg">
+                    <div class="itemData">
+                        <div class="itemSongName">Teen Idle</div>
+                        <div class="itemArtist">Marina and the Diamonds</div>
+                        <i class="pp" id="4"></i>
+                    </div>
+                </li>
+                <li class="songItem">
+                    <span>05</span>
+                    <img src="track-art/teen-idle.jpg">
+                    <div class="itemData">
+                        <div class="itemSongName">Teen Idle</div>
+                        <div class="itemArtist">Marina and the Diamonds</div>
+                        <i class="pp" id="5"></i>
+                    </div>
+                </li>
+                <li class="songItem">
+                    <span>06</span>
+                    <img src="track-art/teen-idle.jpg">
+                    <div class="itemData">
+                        <div class="itemSongName">Teen Idle</div>
+                        <div class="itemArtist">Marina and the Diamonds</div>
+                        <i class="pp" id="6"></i>
+                    </div>
+                </li>
+                <li class="songItem">
+                    <span>07</span>
+                    <img src="track-art/teen-idle.jpg">
+                    <div class="itemData">
+                        <div class="itemSongName">Teen Idle</div>
+                        <div class="itemArtist">Marina and the Diamonds</div>
+                        <i class="pp" id="7"></i>
+                    </div>
+                </li>
+                <li class="songItem">
+                    <span>08</span>
+                    <img src="track-art/teen-idle.jpg">
+                    <div class="itemData">
+                        <div class="itemSongName">Teen Idle</div>
+                        <div class="itemArtist">Marina and the Diamonds</div>
+                        <i class="pp" id="8"></i>
+                    </div>
+                </li>
+                <li class="songItem">
+                    <span>09</span>
+                    <img src="track-art/teen-idle.jpg">
+                    <div class="itemData">
+                        <div class="itemSongName">Teen Idle</div>
+                        <div class="itemArtist">Marina and the Diamonds</div>
+                        <i class="pp" id="9"></i>
+                    </div>
+                </li>
+                <li class="songItem">
+                    <span>10</span>
+                    <img src="track-art/teen-idle.jpg">
+                    <div class="itemData">
+                        <div class="itemSongName">Teen Idle</div>
+                        <div class="itemArtist">Marina and the Diamonds</div>
+                        <i class="pp" id="10"></i>
+                    </div>
+                </li>
+                <li class="songItem">
+                    <span>11</span>
+                    <img src="track-art/teen-idle.jpg">
+                    <div class="itemData">
+                        <div class="itemSongName">Teen Idle</div>
+                        <div class="itemArtist">Marina and the Diamonds</div>
+                        <i class="pp" id="11"></i>
+                    </div>
+                </li>
+            </div>
+        </div>
+        <div class="nowPlaying">
+            <div class="stateBar">
+                PLAYING x OF 15
+            </div>
+            <div class="songPlaying">
+                <div class="details">
+                    <div class="songPhoto">
+                    </div>
+                    <div class="info">
+                        <div class="trackName">Track Name</div>
+                        <div class="trackArtist">Track Artist</div>
+                        <div class="trackAlbum"> Track Album Name</div>
+                    </div>
+                <div class="timeBar">
+                    <div class="current-time ">00:00</div>
+                    <input type="range" min="1" max="60" value="0" class="for_slider" onchange="seekTo()">
+                    <div class="total-duration">00:00</div>
+                </div>
+                <div class="buttons">
+                    <div class="buttons-song">
+                        <div class="previous-song" onclick="prevSong()">
+                            <i class="fas fa-step-backward fa-4x" title="previous"></i>
+                        </div>
+                        <div class="playPause-song" onclick="playPause()">
+                            <i class="fas fa-play-circle fa-6x" title="play-pause"></i>
+                        </div>
+                        <div class="next-song" onclick="nextSong()">
+                            <i class="fas fa-step-forward fa-4x" title="next"></i>
+                        </div>
+                    </div>
+                    <div class="buttons-2" >
+                        <div class="random-song" onclick="shuffle()">
+                            <i class="fas fa-random fa-2x" title="shuffle"></i>
+                        </div>
+                        <div class="repeat-song" onclick="repeatSong()">
+                            <i class="fas fa-repeat fa-2x" title="repeat"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
